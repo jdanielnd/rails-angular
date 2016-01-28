@@ -29,9 +29,15 @@ gem 'responders', '~> 2.0'
 gem 'angular_rails_csrf'
 gem 'devise', '~> 3.4.0'
 
+source "https://rails-assets.org" do
+  gem "rails-assets-angular-devise"
+end
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
+  gem 'rspec-rails', '~> 3.0'
+  gem 'factory_girl_rails'
 end
 
 group :development do

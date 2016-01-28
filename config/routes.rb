@@ -12,6 +12,6 @@ Rails.application.routes.draw do
 
     member do
       put '/upvote' => 'posts#upvote'
-    end
+  end
   end
 end
